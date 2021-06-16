@@ -1,0 +1,63 @@
+Doctype  
+html
+   head
+      title Dance website 
+      style
+        include ../static/style.css 
+   body 
+    nav#navbar
+      ul 
+       div#logo 
+          img(src="/static/logo.png")
+          | PDA
+       li #[a(href="/") Home ]
+       li #[a(href="/") Contact Us ]
+       li #[a(href="/") Services]
+       li #[a(href="/") Class Info]
+       li #[a(href="/") Contact Us ]
+
+    section#introSection
+     div Welcome To Prerna's Dance Academy 
+     div.small Fall In Love With Dance
+
+    section#missionSection
+      h2 Our Mission
+      div.card
+         h3 Dance Prefection 
+         div.card-box
+               div.card-img
+                    img(src="/static/img1.png")
+               div.card-content
+                    p This is the best dance academy of the universe
+
+      div.card 
+        h3 Dance the way you like
+        div.card-box
+            div.card-img.img2
+                    img(src="/static/img2.png")
+            div.card-content
+                    p This is the best dance academy of the universe
+
+      div.card 
+        h3 Expert Teaching
+        div.card-box
+                div.card-img
+                    img(src="/static/img3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    
+
+    section#sopnsersSection
+     h1 Our Sponsors
+     div#sponsors 
+         img(src="/static/logo1.png", alt="sp" Class="sp_img")
+         img(src="/static/logo2.png", alt="sp" Class="sp_img")
+         img(src="/static/logo3.png", alt="sp" Class="sp_img")
+         img(src="/static/logo6.png", alt="sp" Class="sp_img")
+         
+
+   footer#footer
+        | Copyright © 2020-2021 PrernaAcademy.com | All Rights Reserved 
+
+   scrite 
+       include ../static/index.js     

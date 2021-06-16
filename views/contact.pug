@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts  
+  script(src="/static/index.js  ")
+
+block style 
+  style
+        include ../static/style.css
+        include ../static/stylecont.css
+
+block content 
+   h1 Contact Us
+   form(action="/contact", method="post" Class="my_form")
+      input(type="text" name="name" Class="user_input" placeholder="Enter Your Name")
+      input(type="text" name="phone" Class="user_input" placeholder="Enter Your phone no")
+      input(type="text" name="email" Class="user_input" placeholder="Enter Your Email Id")
+      input(type="text" name="address" Class="user_input" placeholder="Enter Your Adrress")
+      textarea(name="issue", cols="30", rows="6" Class="user_input" placeholder="Anything Else ")
+      button.btn 
+        | Submit
